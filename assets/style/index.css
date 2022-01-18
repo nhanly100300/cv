@@ -1,0 +1,451 @@
+
+#main{
+    background: linear-gradient(to right bottom, #b9d8f5, #ccdde4);
+}
+.intro{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    position: relative;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 4.8rem;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+.intro__user{
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+    position: relative;
+}
+.intro__user::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color:var(--mota-color) ;
+    width: 0.1rem;
+    height: 100%;
+    right: 0;
+}
+.intro__user--img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0.4rem 0.7rem rgb(0 0 0 / 45%);
+}
+.intro__user--right{
+    position: relative;
+    margin-left: 2rem;
+}
+.intro-user-right__name{
+    font-size: 3rem;
+}
+.intro-user-right__job{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+.intro-user-right__social{
+    display: inline-flex;
+    margin-top: 4.5rem;
+    list-style: none;
+}
+.intro-user-right__social--item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.note{
+    background: var(--white-color);
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 10%);
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68 , -0.55 , 1.55);
+    opacity: 0;
+}
+.note::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 10%);
+    left: 50%;
+    bottom: -18%;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+.intro-user-right__social--link{
+    border-radius: 50%;
+}
+.intro-user-right__social--icons{
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: block;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+    border: 0.1rem solid #ccc;
+    border-radius: 50%;
+    z-index: 2;
+    /* opacity: 0; */
+}
+.intro-user-right__social--icon{
+    color: #000;
+    font-size: 2.2rem;
+    line-height: 4.1rem;
+    margin-left: 1.15rem;
+}
+.intro-user-right__social--item:hover .note{
+    opacity: 1;
+    top:-90%;
+    pointer-events: auto;
+    transition: all 0.4s;
+}
+.intro-user-right__social--icon:hover,
+.intro-user-right__social--item:hover .note
+{
+    text-shadow: 0px -1px 0px -1px rgba(0,0,0, 0.4);
+}
+.intro-user-right__social--item.facebook:hover .note,
+.intro-user-right__social--item.facebook:hover .note::before,
+.intro-user-right__social--icons.facebook:hover
+{
+    background-color: #3b5998;
+}
+.intro-user-right__social--item.TikTok:hover .note,
+.intro-user-right__social--item.TikTok:hover .note::before,
+.intro-user-right__social--icons.TikTok:hover
+{
+    background-color: #333;
+}
+.intro-user-right__social--item.Instagram:hover .note,
+.intro-user-right__social--item.Instagram:hover .note::before,
+.intro-user-right__social--icons.Instagram:hover
+{
+    background: linear-gradient(to bottom, #E95950, #faa7de);
+}
+.intro-user-right__social--item.facebook:hover .note,
+.intro-user-right__social--item.facebook:hover .intro-user-right__social--icon,
+.intro-user-right__social--item.TikTok:hover .note,
+.intro-user-right__social--item.TikTok:hover .intro-user-right__social--icon,
+.intro-user-right__social--item.Instagram:hover .note,
+.intro-user-right__social--item.Instagram:hover .intro-user-right__social--icon
+{
+    color: #fff;
+}
+.intro__contact{
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+.intro__contact--list{
+    list-style: none;
+    margin-top: 1.8rem;
+}
+.intro__contact--item{
+    padding-left: 4.4rem;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+.intro__contact--text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    color: var(--mota-color);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+.intro__contact--info{
+    font-size: 1.6rem;
+    color: var(--text-color);
+
+}
+
+.navigation__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 3.4rem;
+    border-radius: 3rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+.navigation__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, #bfe9f0, #eec9f1);
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+}
+.navigation__item--name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+}
+.navigation__item:hover{
+    background: linear-gradient(to right bottom, #aeeaf5, #fab4ff);
+    cursor: pointer;
+}
+/* Information */
+.container__informations{
+    padding: 2rem;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    position: relative;
+}
+.container__information{
+    list-style: none;
+    display: none;
+}
+.container__information--item{
+    margin-bottom: 4rem;
+}
+.container__information--item-header{
+    position: relative;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.container__information--item-header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 185%;
+    width: 12%;
+    height: 0.5rem;
+    background-image: linear-gradient( 142.17deg,#cc2dc4 6.66%,#cead1c 91.48%);
+    border-radius: 2.5rem;
+}
+.header-title{
+    font-size: 3.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.myself__text{
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.item__title--body{
+    margin-bottom: 3rem;
+    text-align: left;
+    position: relative;
+}
+.item__title--body::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 150%;
+    width: 15%;
+    height: 0.4rem;
+    background-image: linear-gradient( 142.17deg,#cc2daa 6.66%,#1cce75 91.48%);
+    border-radius: 2.5rem;
+}
+.title__h3{
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product__link{
+    text-decoration: none;
+}
+.zom{
+    overflow: hidden;
+}
+.zom:hover .product__img{
+    transform: scale(1.02);
+    transition: all 0.4s linear;
+}
+.case-item{
+    overflow: hidden;
+    padding: 1.6rem;
+    margin: 0 1rem 1.2rem;
+    border-radius: 1.6rem;
+}
+.product__img{
+    width: 100%;
+    transform: scale(1);
+    border-radius: 1.6rem;
+}
+.product__title{
+    text-align: center;
+}
+.product__title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+/* slide */
+.slide{
+    position: relative;
+}
+.slide__Speakers{
+    display: none;
+    width: 100%;
+    background: linear-gradient( to right top, rgb(228, 247, 162), rgb(230, 121, 240) );
+    padding: 3rem;
+    border-radius: 2.5rem;
+    transition: all 4s;
+}
+.slide__avatar--img{
+    width: 8.5rem;
+    height: 8.5rem;
+    object-fit: cover;
+    border-radius: 2.2rem;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.slide__text{
+    margin: 0.5rem 0 0 2rem;
+    text-align: left;
+}
+.slide__text--name{
+    font-size: 2rem;
+}
+.slide__text--title{
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+.slide__directional{
+    display: block;
+}
+.slide__directional--prev{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 55%;
+    left: -2%;
+    background-color: var(--white-color);
+    box-shadow: 0 0px 9px 0px rgb(0 0 0 / 30%);
+    text-align: center;
+    border-radius: 50%;
+    transform: translateY(-70%);
+    border: 0.1rem solid #666;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0.2;
+    padding: 1.2rem;
+}
+.slide__directional--prev:hover{
+    opacity: 0.6;
+    transition: all 0.4;
+}
+.slide__directional--next{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 55%;
+    right:-2%;
+    background-color: var(--white-color);
+    box-shadow: 0 0px 9px 0px rgb(0 0 0 / 30%);
+    text-align: center;
+    border-radius: 55%;
+    transform: translateY(-70%);
+    border: 0.1rem solid #666;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0.2;
+    padding: 1.2rem;
+}
+.slide__directional--next:hover{
+    opacity: 0.6;
+    transition: all 0.4;
+}
+.slide__directional--icon{
+    font-size: 1.6rem;
+}
+.slide__node{
+    margin-top: 1rem;
+    text-align: center;
+}
+.slide__node--item{
+    margin: 0 0.4rem;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color:rgb(153, 153, 153) ;
+    display: inline-block;
+    /* transition: background-color 0.6s ease; */
+}
+/* education */
+.title__h2{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+}
+.education__icon{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+}
+.education__body--info{
+    margin-bottom: 2.2rem;
+    margin-left: 3rem;
+    position: relative;
+}
+.education__body--info.line::before,
+.education__body--info.linefinally::before,
+.education__body--info.lineintern::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.185rem;
+    background-color: #ccc;
+    left: -1.6rem;
+    top: 4px;
+}
+.education__body--info.line::before{
+    height: 18rem;
+}
+.education__body--info.linefinally::before{
+    height: 17rem;
+}
+.education__body--info.lineintern::before{
+    height: 12rem;
+}
+.title__h4{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.title__h4::before{
+    content: "";
+    background-color: #304CFD;
+    box-shadow: 0 0 0 0.2rem rgb(48 76 253 / 25%);
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: -2rem;
+    height: 1rem;
+    width: 1rem;
+}
