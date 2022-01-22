@@ -6,8 +6,6 @@ const nodeNext = $('.slide__directional--next')
 const nodePrev = $('.slide__directional--prev')
 const sizeSlide = slides.length
 let numberSlide = 0;
-console.log(sizeSlide);
-
 function Next(){
     slides.forEach(slide => {
         slide.classList.remove('activeSpeakers')

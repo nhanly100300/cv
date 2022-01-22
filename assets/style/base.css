@@ -24,7 +24,7 @@ body {
    
 }
 .active{
-    background-image: linear-gradient(142.17deg,#4f93f1 6.66%,#dd44f8 91.48%) !important;
+    background-image: linear-gradient(142.17deg,#4f93f1 6.66%,#dd44f8 91.48%) !important ;
     box-shadow: inset -0.25rem -0.25rem 0.3125rem rgb(0 0 0 / 10%), inset 0.25rem 0.25rem 0.3125rem rgb(255 255 255 / 23%) !important;
 }
 .activeSpeakers{

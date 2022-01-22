@@ -194,7 +194,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right bottom, #bfe9f0, #eec9f1);
+    border: 0.1rem solid #ccc;
+    box-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 10rem;
     margin-bottom: 1.5rem;
@@ -424,7 +425,7 @@
     top: 4px;
 }
 .education__body--info.line::before{
-    height: 18rem;
+    height: 16rem;
 }
 .education__body--info.linefinally::before{
     height: 17rem;
@@ -448,4 +449,44 @@
     left: -2rem;
     height: 1rem;
     width: 1rem;
+}
+/* hobby */
+.hobby{
+    display: flex;
+    padding: 2rem;    
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+    border-radius: 1rem;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.4rem;
+}
+.hobby:hover{
+    /* transform: scale(1.01); */
+    transition: all 0.4s ease-in;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.3);
+
+}
+.hobby__avatar--img{
+    width: 14rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.hobby__avatar--img:hover{
+    opacity: 0.8;
+    transition: all 0.4s ease-in;
+}
+.hobby__text{
+    display: flex;
+    flex-direction: column;
+    margin : 0.4rem 0 0 3rem;
+}
+.hobby__text--name{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.hobby__text--title{
+    padding-top: 1.2rem;
+    font-size: 1.4rem;
+    text-align: justify;
 }
