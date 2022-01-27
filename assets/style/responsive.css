@@ -1,0 +1,105 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .intro{
+        display: block;
+        margin-top: 15%;
+    }
+    .intro__user{
+        display: block;
+        text-align: center;
+    }
+    .intro__user::after{
+        display: none;
+    }
+    .intro__user--left{
+        margin: -15% 0 0 3.2rem;
+    }
+    .intro__user--img{
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 1rem;
+        border-radius: 4rem;
+    }
+    .intro__user--right{
+        display: block;
+        margin-bottom: 1.6rem;
+    }
+    .intro-user-right__name{
+        font-size: 2.6rem;
+        padding-left: 1.4rem;
+        font-weight: 600;
+    }
+    .intro-user-right__job{
+        font-size: 2rem;
+        padding-left: 2rem;
+        font-weight: 400;
+    }
+    .intro-user-right__social{
+        margin-top: 3.2rem;
+        padding-left: 1rem;
+    }
+    .intro-user-right__social--icon{
+        font-size: 2.2rem;
+        line-height: 4.1rem;
+        margin-left: 0.2rem
+    }
+    .intro__contact{
+        justify-content: space-around;
+        padding-left: 4rem;
+    }
+    .intro__contact--text{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: rgb(146, 146, 148);
+    }
+}
+/* moblie */
+@media (max-width:739px) {
+    .wide{
+        width: 39rem;
+    }
+    .intro{
+        display: block;
+        margin-top: 15%;
+    }
+    .intro__user{
+        display: block;
+        text-align: center;
+    }
+    .intro__user::after{
+        display: none;
+    }
+    .intro__user--left{
+        margin: -15% 0 0 3.2rem;
+    }
+    .intro__user--img{
+        width: 13rem;
+        height: 13rem;
+        margin-bottom: 1rem;
+        border-radius: 4rem;
+    }
+    .intro__user--right {
+        margin-left: 4.6rem;
+    }
+    .intro-user-right__job{
+        font-size: 1.6rem;
+    }
+    .intro-user-right__social{
+        margin-top: 3.4rem;
+    }
+    .intro-user-right__social--icon {
+        margin-left: 0.05rem;
+    }
+    .intro__contact{
+        display: block;
+    }
+}
+@media (max-width: 400px) {
+    .wide{
+        width: 340px;
+    }
+    .intro {
+        display: block;
+        margin-top: 15%;
+    }
+}
