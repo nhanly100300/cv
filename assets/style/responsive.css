@@ -52,6 +52,63 @@
         font-weight: 600;
         color: rgb(146, 146, 148);
     }
+    .container__navigation {
+        width: 100%;
+    }
+    .options{    
+        width: 100%!important;
+        position: relative!important;
+        margin-top: -1rem!important;
+        top: 0px!important;
+        margin-bottom: 1.8rem;
+
+    }
+    .navigation__list{
+        flex-direction: row;
+    }
+    .navigation__item{
+        margin-right: 1rem;
+    }
+    .myself__text{
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        font-weight: 500;
+    }
+    .slide__text--name{
+        font-size: 2.6rem;
+    }
+    .slide__text--title{
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        font-weight: 500;
+    }
+    .title__h2{
+        font-size: 2.6rem;
+    }
+    .title__h4{
+        font-size: 2.2rem;
+    }
+    .education__body--info.line::before, 
+    .education__body--info.linefinally::before, 
+    .education__body--info.lineintern::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width:0; 
+        background-color: #ccc;
+        left: -1.6rem;
+        top: 4px;
+    }
+    .hobby__text--title{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
 }
 /* moblie */
 @media (max-width:739px) {
@@ -81,8 +138,12 @@
     .intro__user--right {
         margin-left: 4.6rem;
     }
+    .intro-user-right__name{
+        font-size: 2.4rem;
+    }
     .intro-user-right__job{
-        font-size: 1.6rem;
+        font-size: 2rem;
+        padding-left: 0.5rem;
     }
     .intro-user-right__social{
         margin-top: 3.4rem;
@@ -93,13 +154,87 @@
     .intro__contact{
         display: block;
     }
+    .container__informations{  
+        margin-bottom: 5rem;
+    }
+    .Speaker{
+        display: none;
+    }
+    .options{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        margin-top: 0;
+    }
+    .navigation__list{
+        flex-direction: row;
+        padding: 1rem 0;
+        background: linear-gradient(to right bottom,rgba(156, 220, 240, 0.7), rgba(247, 246, 246, 0.3));
+        border-radius: 0;
+    }
+    .navigation__item {
+        height: 7rem;
+        width: 21%;
+        margin: 0 1rem 0 0;
+    }
+    lord-icon{
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    .title__h4{
+        line-height: 2.6rem;
+    }
+    .navigation__item--option{
+        font-size: 1.2rem;
+    }
+    .education__body--info.line::before, 
+    .education__body--info.linefinally::before, 
+    .education__body--info.lineintern::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width:0; 
+        background-color: #ccc;
+        left: -1.6rem;
+        top: 4px;
+    }
+    .hobby__text--name{
+        line-height: 2.4rem;
+    }
+    .hobby__text--title{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
 }
 @media (max-width: 400px) {
     .wide{
-        width: 340px;
+        width: 34rem;
     }
     .intro {
         display: block;
+        width: 100%;
         margin-top: 15%;
+        padding-right: 0;
+    }
+    .intro-user-right__name{
+        font-size: 1.8rem;
+    }
+    .intro-user-right__job{
+        font-size: 1.6rem;
+    }
+    .hobby__text--name{
+        font-size: 1.4rem;
+    }
+    .hobby__text--title{
+        text-align: left;
+        -webkit-line-clamp: 3;
     }
 }
